@@ -14,10 +14,10 @@ const Card = styled.div`
   border-radius: 0.25rem;
   box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  /* opacity: ${(props) => (props.visible ? '1' : '0')}; */
+  opacity: ${(props) => (props.visible ? '1' : '0')};
   padding: 2rem 1.5rem;
   position: relative;
-  /* transform: ${(props) => (props.visible ? 'none' : 'translateX(-30px)')}; */
+  transform: ${(props) => (props.visible ? 'none' : 'translateX(-30px)')};
   transition: opacity 0.3s ease-out, transform 0.5s ease-out;
 
   &:not(:last-child) {

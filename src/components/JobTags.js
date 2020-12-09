@@ -41,7 +41,7 @@ const JobTags = ({ role, level, languages, tools }) => {
   return (
     <TagList>
       {tags.map((tag, index) => (
-        <li role="button" key={index} onClick={handleClick}>
+        <li key={index} onClick={handleClick}>
           {tag}
         </li>
       ))}
