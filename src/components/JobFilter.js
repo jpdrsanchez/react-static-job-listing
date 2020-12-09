@@ -47,7 +47,7 @@ const FilterWrapper = styled.div`
   box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
   display: grid;
   grid-template-columns: 1fr auto;
-  padding: 1.25rem 2.5rem;
+  padding: 0.75rem 2.5rem;
 
   @media (min-width: 500px) {
     padding-left: 1.125rem;
@@ -59,7 +59,6 @@ const FilterList = styled.ul`
   cursor: pointer;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
 
   li {
     animation: ${showTag} 0.3s forwards;
@@ -71,6 +70,8 @@ const FilterList = styled.ul`
     font-size: 0.6875rem;
     font-weight: 700;
     line-height: 1;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
     opacity: 0;
     overflow: hidden;
     transition: all 0.5s;
@@ -93,6 +94,10 @@ const FilterList = styled.ul`
       &:hover {
         background-color: var(--very-dark-grayish-cyan);
       }
+    }
+
+    &:not(:last-child) {
+      margin-right: 1rem;
     }
   }
 `;

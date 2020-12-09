@@ -5,7 +5,6 @@ import JobContext from '../contexts/JobContext';
 const TagList = styled.ul`
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
 
   li {
     background-color: var(--filter);
@@ -14,12 +13,18 @@ const TagList = styled.ul`
     cursor: pointer;
     font-size: 0.6875rem;
     font-weight: 700;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
     padding: 0.625rem 0.5rem 0.5rem;
     transition: all 0.3s ease-out;
 
     &:hover {
       background-color: var(--dark-cyan);
       color: #fff;
+    }
+
+    &:not(:last-child) {
+      margin-right: 1rem;
     }
   }
 `;

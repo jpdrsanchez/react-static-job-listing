@@ -12,14 +12,13 @@ const CompanyWrapper = styled.div`
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
   margin-bottom: 0.75rem;
 
   h3 {
     color: var(--dark-cyan);
     font-size: 0.75rem;
     font-weight: 700;
-    margin-right: 0.625rem;
+    margin-right: 1.125rem;
   }
 `;
 
@@ -39,6 +38,7 @@ const StyledNew = styled(StyledSpan)`
 
 const StyledFeatured = styled(StyledSpan)`
   background-color: var(--very-dark-grayish-cyan);
+  margin-left: 0.5rem;
 `;
 
 const Title = styled.h2`
